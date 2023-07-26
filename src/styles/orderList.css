@@ -1,0 +1,25 @@
+.orderList{
+    margin: 0% 0% 1% 20%;
+    display: flex;
+    justify-content: center;
+    color: black;
+    width:80%;
+    
+}
+
+.orderList-options{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    
+}
+.orderList-options-option{
+    width: 190px;
+    margin: 1%;
+    cursor: pointer;
+    background: lightblue;
+    padding: 5px 5px 5px 25px;
+    border-radius: 5px;
+    
+
+}

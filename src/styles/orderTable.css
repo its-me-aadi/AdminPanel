@@ -1,0 +1,19 @@
+.orderTable{
+    margin: 0% 0% 5% 22%;
+    /* display: flex; */
+    color: black;
+    width:80%;
+        /* background-color: aquamarine; */
+    line-height: 40px;
+    border-collapse: collapse;
+}
+th{
+    width: 180px;
+}
+th,td{
+    border: 1px solid rgb(80, 80, 80);
+    padding: 8px;
+}
+.orderTable-button:hover{
+    cursor: pointer;
+}

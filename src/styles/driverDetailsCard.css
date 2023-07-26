@@ -1,0 +1,46 @@
+.main-div{
+    /* background-color: black;  */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center;
+    align-items: center; */
+    width:40%;
+    height:max-content;
+    margin: 3% 0% 0% 40%;
+    color: wheat;
+    background: rgba(30, 30, 30, 0.9);
+    position: relative;
+}
+.photo-name{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5%;
+    background: rgba(80,80, 80, 0.9);
+    padding: 10px;
+}
+.photo{
+    margin:10px 0px 0px 20px;
+    font-size: larger;
+}
+.name{
+    margin:10px 20px 0px 0px;
+    font-size: larger;
+}
+.verificationDetails{
+    display: flex;
+    flex-direction: column;
+}
+.details{
+    display: flex;
+    margin: 9px;
+
+}
+.button{
+    position: absolute;
+    right: 10%;
+}
+.content{
+    margin-left: 15%;
+    font-size: 20px;
+}

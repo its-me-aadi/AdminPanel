@@ -1,0 +1,29 @@
+.orderCard{
+    width:32%;
+    height: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px;
+    z-index: 2;
+    border-radius: 5px;
+}
+.orderCard-heading{
+    display: flex;
+    justify-content: flex-start;
+    margin: 25px 25px 0px 35px;
+    font-size: 22px;
+    font-weight: bolder;
+}
+.orderCard-details{
+    display: flex;
+    justify-content: flex-start;
+    margin: 25px 0px 20px 35px;
+}
+@media only screen and (max-width: 600px) {
+    .orderCard{
+        width:30%;
+        height: max-content;
+        margin: 0% 0% 12% 0%;
+    }
+}
