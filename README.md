@@ -3,10 +3,13 @@ You can see see Drivers ,Users and all the orders. You can assign driver to the 
 I haven't made it responsive, as responsiveness was not required.
 
 For cloning project:
+<br>
 git clone https://github.com/its-me-aadi/AdminPanel-MovEasy.git
 
 Install all the required dependencies using:
+<br>
 npm i
 
 After installing the dependencies cd into the main app and run:
+<br>
 npm start
