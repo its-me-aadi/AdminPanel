@@ -11,6 +11,7 @@ const [driverData,setDriverData]=useState({
     mail:false
 
 });
+const [photo,setPhoto]=useState("https://upload.wikimedia.org/wikipedia/en/4/4c/GokumangaToriyama.png");
 const [name,setName]=useState("Driver");
 useEffect(()=>{
         const db = getDatabase();
@@ -20,6 +21,7 @@ useEffect(()=>{
         const index=localStorage.getItem("driverID");
         setDriverData(data[index].verification);
         setName(data[index].name);
+        // setPhoto(data[index].photo);
         });
 },[])
 function Verify(event){
@@ -42,8 +44,10 @@ function Verify(event){
   return (
     <div className='main-div'>
       <div className='photo-name'>
-        <div className='photo'>{name}</div>
-        <div className='name'>Photo</div>
+        <div className='name'>{name}</div>
+        <div >
+          <img className='photo' src={photo} alt="profile-pic"/>
+        </div>
       </div>
       <div className='verificationDetails'>
         <div className='details'>
