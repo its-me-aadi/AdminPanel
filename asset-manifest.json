@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/AdminPanel-MovEasy/static/css/main.9d4b3daa.css",
+    "main.js": "/AdminPanel-MovEasy/static/js/main.8fd13065.js",
+    "static/media/logo.png": "/AdminPanel-MovEasy/static/media/logo.c2281f0301b28e6b9e6c.png",
+    "index.html": "/AdminPanel-MovEasy/index.html",
+    "main.9d4b3daa.css.map": "/AdminPanel-MovEasy/static/css/main.9d4b3daa.css.map",
+    "main.8fd13065.js.map": "/AdminPanel-MovEasy/static/js/main.8fd13065.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9d4b3daa.css",
+    "static/js/main.8fd13065.js"
+  ]
+}
