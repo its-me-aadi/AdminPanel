@@ -47,7 +47,7 @@ function Login(props) {
             });
     }
     return (
-        <div className="card">
+        <div >
             <div className="card-header">
                 <center><h3>Login</h3></center>
             </div>

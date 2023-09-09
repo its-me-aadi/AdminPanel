@@ -17,11 +17,9 @@ export default function Home(props) {
       }
       else {
         const db = getDatabase();
-        const data = ref(db, 'orders');
-        console.log(data);
-        onValue(data, (snapshot) => {
+        const orderData = ref(db, 'orders');
+        onValue( orderData , (snapshot) => {
           const data1 = snapshot.val();
-          console.log(data1);
           setData(data1);
         });
       }
@@ -36,7 +34,7 @@ export default function Home(props) {
   return (
     <div>
       <Sidebar button="button1"/>
-      <RightSection data={data} heading="Dashboard" users={false} driver={false} dashboard={true} newOrders={false} cardData={Orders} verifyDriver={false} />
+      <RightSection button="button1" data={data} heading="Dashboard" users={false} driver={false} dashboard={true} newOrders={false} cardData={Orders} verifyDriver={false} />
     </div>
   )
 }

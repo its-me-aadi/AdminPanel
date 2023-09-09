@@ -1,32 +1,39 @@
 .main-div{
-    /* background-color: black;  */
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* justify-content: center;
-    align-items: center; */
     width:40%;
     height:max-content;
-    margin: 3% 0% 0% 40%;
-    color: wheat;
-    background: rgba(30, 30, 30, 0.9);
+    margin: 3% 0% 2% 40%;
+    font-family: cursive;
+    color: whitesmoke;
+    /* background: linear-gradient(0deg,#FC5C7D,#6A82FB); */
+    background-color: rgb(111, 97, 192);
     position: relative;
 }
 .photo-name{
     display: flex;
     flex-direction: row;
+    font-size: 22px;
     justify-content: space-between;
     margin-bottom: 5%;
-    background: rgba(80,80, 80, 0.9);
+    /* background:linear-gradient(90deg,#7F7FD5,#86A8E7,#91EAE4); */
+    background-color: #A084E8;
     padding: 10px;
 }
 .photo{
     margin:10px 0px 0px 20px;
-    font-size: larger;
     width: 50px;
     height: 50px;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     border-radius: 50%;
+}
+.adhar{
+    margin:0px 0px 0px 20px;
+    font-size: larger;
+    width: 180px;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 1%;
 }
 .name{
     margin:10px 20px 0px 20px;
@@ -43,9 +50,9 @@
 }
 .button{
     position: absolute;
-    right: 10%;
+    right: 4%;
 }
 .content{
-    margin-left: 15%;
+    margin: 0% 0% 0% 10%;
     font-size: 20px;
 }

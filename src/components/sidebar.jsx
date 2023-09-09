@@ -15,6 +15,7 @@ export default function Sidebar(props) {
     button2:{},
     button3:{},
     button4:{},
+    button5:{},
     [props.button]:clickedButtonStyle
   }
 
@@ -27,11 +28,11 @@ export default function Sidebar(props) {
         <hr className='sidebar-hr'/>
         <div>
             <ul className='sidebar-ul'>
-                <Link to="/" className='sidebar-listitems' style={clickedButton.button1}><li  name="button1">Dashboard</li></Link>
-                <Link to="/users" className='sidebar-listitems' style={clickedButton.button2}><li name="button2">Users</li></Link>
-                <Link to="/drivers" className='sidebar-listitems' style={clickedButton.button3}><li name="button3">Drivers</li></Link>
-                <Link to="/new-orders" className='sidebar-listitems' style={clickedButton.button4}><li name="button4">New Orders</li></Link>
-  
+                <Link to="/" className='sidebar-listitems' style={clickedButton.button1}><li >Dashboard</li></Link>
+                <Link to="/users" className='sidebar-listitems' style={clickedButton.button2}><li>Users</li></Link>
+                <Link to="/drivers" className='sidebar-listitems' style={clickedButton.button3}><li >Drivers</li></Link>
+                <Link to="/new-orders" className='sidebar-listitems' style={clickedButton.button4}><li>New Orders</li></Link>
+                <Link to="/courier-req" className='sidebar-listitems' style={clickedButton.button5}><li>Courier</li></Link>
             </ul>
         </div>
     </div>

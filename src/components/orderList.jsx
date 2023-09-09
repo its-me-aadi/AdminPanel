@@ -4,7 +4,7 @@ import OrdersTable from './ordersTable'
 export default function OrderList(props) {
 
   const clickedButtonStyle = {
-    opacity: "0.5",
+    opacity: "0.7",
     backgroundColor: "black",
     color: "whitesmoke"
   }
@@ -14,7 +14,7 @@ export default function OrderList(props) {
   }
   const pending = {
     color: "black",
-    backgroundColor: "yellow"
+    backgroundColor: "#E1C89E"
   }
   const delievered = {
     color: "whitesmoke",
@@ -26,7 +26,7 @@ export default function OrderList(props) {
   }
   const canceled = {
     color: "whitesmoke",
-    backgroundColor: "red"
+    backgroundColor: "#A22C29"
   }
   const [typeOfOrders, setTypeOdorders] = useState("");
   const [orderType, setOrderType] = useState({
@@ -61,14 +61,14 @@ export default function OrderList(props) {
               })
             }} name="pending" style={orderType.pending}>Pending Orders</li>
             <li className='orderList-options-option' onClick={() => {
-              setTypeOdorders("delhivered"); setOrderType({
+              setTypeOdorders("delivered"); setOrderType({
                 all: all,
                 pending: pending,
                 delievered: clickedButtonStyle,
                 booked: booked,
                 canceled: canceled
               })
-            }} name="delievered" style={orderType.delievered}>Delievered Orders</li>
+            }} name="delievered" style={orderType.delievered}>Delivered Orders</li>
             <li className='orderList-options-option' onClick={() => {
               setTypeOdorders("booked");
               setOrderType({
@@ -78,7 +78,7 @@ export default function OrderList(props) {
                 booked: clickedButtonStyle,
                 canceled: canceled
               })
-            }} name="booked" style={orderType.booked}>Booked Orders</li>
+            }} name="booked" style={orderType.booked}>Booked</li>
             <li className='orderList-options-option' onClick={() => {
               setTypeOdorders("cancelled");
               setOrderType({

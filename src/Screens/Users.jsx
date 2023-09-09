@@ -28,7 +28,7 @@ export default function User(props) {
   return (
     <div>
       <Sidebar button="button2"/>
-      <RightSection data={Users} heading="Users" users={true} driver={false} dashboard={false} newOrders={false} verifyDriver={false} />
+      <RightSection button="button2" data={Users} heading="Users" users={true} driver={false} dashboard={false} newOrders={false} verifyDriver={false} />
     </div>
   )
 }

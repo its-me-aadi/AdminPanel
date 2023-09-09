@@ -7,9 +7,12 @@
     top:0%;
     height: 12%;
     width: 82%;
-    background-color: rgba(40,40,40,1);
+    background-color: rgba(30,30,30,1);
     color: antiquewhite;
     z-index: 10;
+}
+.navbar-links{
+    display: none;
 }
 .navbar-search{
     margin: 0% 2% 0% 0%;
@@ -20,27 +23,53 @@
     font-size: 28px;
     font-weight: 600;
 }
+.navbar-logout{
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 5px;
+    color:red;
+    cursor:pointer;
+}
 .navbar-search-input{
     width: 250px;
     height: 30px;
     margin-right: 0px;
 }
-.navbar-search-button{
-    width: 80px;
-    height: 27px;
-    cursor: pointer;
-}
-.navbar-user{
-    margin-right: 15px;
-    font-size: 20px;
-}
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     .navbar{
         position: fixed;
         left: 0%;
         top:0%;
         width:100%;
-        margin: 0% 0% 12% 0%;
+        margin: 0% 0% 10% 0%;
+    }
+    .navbar-heading{
+        margin:0px 0px 0px 20px;
+        font-size: 17px;
+        font-weight: 600;
+    }
+    .navbar-search-input{
+        font-size: 10px;
+        width: 120px;
+        height: 25px;
+        margin-right: 0px;
+    }
+    .navbar-logout{
+        font-size: 16px;
+        font-weight: 600;
+        margin-right: 5px;
+        color:red;
+        cursor:pointer;
+    }
+    .navbar-links{
+        display: flex;
+        margin-top: 1%;
+        font-size: 12px;
+        width: 100%;
+    }
+    .navbar-link{
+        font-size: 12px;
+        margin: 0% 2% 0% 4%;
     }
 }

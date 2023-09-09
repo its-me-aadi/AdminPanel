@@ -1,5 +1,5 @@
 .orderCard{
-    width:32%;
+    width:30%;
     height: 7rem;
     display: flex;
     flex-direction: column;
@@ -20,10 +20,17 @@
     justify-content: flex-start;
     margin: 25px 0px 20px 35px;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     .orderCard{
-        width:30%;
+        font-size: 12px;
+        width:25%;
         height: max-content;
-        margin: 0% 0% 12% 0%;
+        margin: 0% 0% 0% 3%;
+    }
+    .orderCard-heading{
+        display: flex;
+        justify-content: flex-start;
+        margin: 2% 2% 0px 3%;
+        font-size: 12px;
     }
 }

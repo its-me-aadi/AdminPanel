@@ -9,6 +9,8 @@ import DriverDetailsCard from './driverDetailsCard'
 import "../styles/orderTable.css"
 import "../styles/navbar.css"
 import { getAuth} from "firebase/auth";
+import CourierList from "../components/courierList";
+import { Link } from 'react-router-dom'
 
 export default function Navbar(props) {
   const auth = getAuth(props.app);
@@ -20,6 +22,20 @@ export default function Navbar(props) {
   function Logout(){
     auth.signOut();
 }
+const clickedButtonStyle={
+  // opacaity:"0.1",
+  color:"wheat",
+  fontWeight:"600"
+}
+
+const clickedButton={
+  button1:{},
+  button2:{},
+  button3:{},
+  button4:{},
+  button5:{},
+  [props.button]:clickedButtonStyle
+}
 
   return (
     <div>
@@ -30,11 +46,18 @@ export default function Navbar(props) {
         <div className='navbar-search'>
           <input type='text' placeholder='Search' name='search' className='navbar-search-input' value={search} onChange={Search} />
         </div>
-        <div className='navbar-user'
-        style={{color:"red",cursor:"pointer"}} onClick={Logout}>Logout
+        <div className='navbar-logout'
+        onClick={Logout}>Logout
         </div>
+        <div className='navbar-links'>
+                <Link to="/" className='navbar-link' style={clickedButton.button1}><p>Dashboard</p></Link>
+                <Link to="/users"  className='navbar-link' style={clickedButton.button2}><p>Users</p></Link>
+                <Link to="/drivers"  className='navbar-link' style={clickedButton.button3}><p>Drivers</p></Link>
+                <Link to="/new-orders"  className='navbar-link' style={clickedButton.button4}><p>New Orders</p></Link>
+                <Link to="/courier-req"  className='navbar-link' style={clickedButton.button5}><p>Courier Requests</p></Link>
       </div>
-
+      </div>
+      
       {props.dashboard &&
         <div>
           <Orders/>
@@ -63,6 +86,13 @@ export default function Navbar(props) {
           <Drivers/>
           <DriverDetailsCard />
         </div>}
+        {
+          props.courier &&
+          <div>
+          <Drivers/>
+          <CourierList searchValue={search}/>
+          </div>
+        }
     </div>
 
   )

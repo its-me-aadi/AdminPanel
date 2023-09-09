@@ -1,11 +1,10 @@
 .orderTable{
-    margin: 0% 0% 5% 22%;
-    /* display: flex; */
+    margin: 0% 0% 5% 20%;
     color: black;
     width:80%;
-        /* background-color: aquamarine; */
     line-height: 40px;
     border-collapse: collapse;
+    text-align: center;
 }
 th{
     width: 180px;
@@ -16,4 +15,30 @@ th,td{
 }
 .orderTable-button:hover{
     cursor: pointer;
+}
+.verified{
+    font-family:cursive;
+    color:#3ACF53;
+    font-weight:600;
+    /* font-size:1.2em;  */
+    cursor:pointer; 
+}
+.notverified{
+    color:red;
+    font-family:cursive;
+    font-weight:600;
+    /* font-size:1.2em;  */
+    cursor:pointer; 
+}
+@media only screen and (max-width: 800px) {
+    .orderTable{
+        justify-content: center;
+        margin: 0% 0% 5% 0%;
+        width:98%;
+        max-width: 98%;
+    }
+    th,td{
+        font-size: 12px;
+        padding: 6px;
+    }
 }

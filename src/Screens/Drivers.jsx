@@ -28,7 +28,7 @@ export default function Driver(props) {
   return (
     <div>
       <Sidebar button="button3"/>
-      <RightSection RightSection data={Drivers} heading="Drivers" users={false} driver={true} dashboard={false} newOrders={false} verifyDriver={false} />
+      <RightSection button="button3" RightSection data={Drivers} heading="Drivers" users={false} driver={true} dashboard={false} newOrders={false} verifyDriver={false} />
     </div>
   )
 }

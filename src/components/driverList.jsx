@@ -21,7 +21,7 @@ const online = {
 }
 const offline = {
   color: "whitesmoke",
-  backgroundColor: "red"
+  backgroundColor: "#A22C29"
 }
 const [orderType, setOrderType] = useState({
   all: clickedButtonStyle,
@@ -52,7 +52,9 @@ const [orderType, setOrderType] = useState({
            
         </div>
     </div>
+    <div style={{display:"flex",justifyContent:"center"}}>
     <DriversTable searchValue={props.search} orderType={typeOfDrivers} tableData={props.listData}/>
+    </div>
     </div>
   )
 }

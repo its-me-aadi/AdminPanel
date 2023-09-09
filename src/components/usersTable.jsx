@@ -7,23 +7,23 @@ export default function ordersTable(props) {
         <div className='orderTable'>
             <table style={{ width: "93%" }} >
                 <tr>
-                    <th>User ID</th>
                     <th >Username</th>
                     <th >Mail ID</th>
                     <th >Contact No.</th>
-                    <th >Location</th>
+                    <th >City</th>
+                    <th>Pin Code</th>
                 </tr>
                 {props.tableData.map((data,index) => {
                   return(
                     (
-                      data.userID.toLowerCase().includes(props.searchValue.toLocaleLowerCase()) 
+                      data.phoneNumber.toLowerCase().includes(props.searchValue.toLocaleLowerCase()) 
                       && 
                       <tr key={index}>
-                          <td style={{ position: 'relative', left: "10px" }} >{data.userID}</td>
-                          <td style={{ position: 'relative', left: "10px" }} >{data.name}</td>
-                          <td style={{ position: 'relative', left: "10px" }}>{data.mail}</td>
-                          <td style={{ position: 'relative', left: "10px" }}>{data.contactNumber}</td>
-                          <td style={{ position: 'relative', left: "10px" }}>{data.location}</td>
+                          <td style={{ position: 'relative', left: "10px" }} >{data.fullName}</td>
+                          <td style={{ position: 'relative', left: "10px" }}>{data.email}</td>
+                          <td style={{ position: 'relative', left: "10px" }}>{data.phoneNumber}</td>
+                          <td style={{ position: 'relative', left: "10px" }}>{data.city}</td>
+                          <td style={{ position: 'relative', left: "10px" }} >{data.pincode}</td>
                       </tr>
                     )
                   )

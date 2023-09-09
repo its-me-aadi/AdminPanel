@@ -9,7 +9,6 @@ export default function DriversTable(props) {
     navigate("/verify-driver");
   }
 
-
   return (
     <div className='orderTable'>
       <hr></hr>
@@ -41,8 +40,8 @@ export default function DriversTable(props) {
                       data.verification.phoneNumber &&
                       data.verification.mail &&
                       data.verification.adharCard) ?
-                      (<button type='button' className='btn btn-success' value={index} onClick={()=>Onclick(index)}>Verified</button>) :
-                      (<button type='button' className='btn btn-danger' value={index} onClick={()=>Onclick(index)}>Not Verified</button>)
+                      (<p className="verified" value={index} onClick={()=>Onclick(index)}>Verified</p>) :
+                      (<p className="notverified" value={index} onClick={()=>Onclick(index)}>Not Verified</p>)
                   }
                 </td>
               </tr>
