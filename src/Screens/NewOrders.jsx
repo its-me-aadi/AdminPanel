@@ -17,7 +17,7 @@ export default function NewOrder(props) {
       }
       else {
         const db = getDatabase();
-        const data = ref(db, 'userRequest');
+        const data = ref(db, 'userRequests');
         onValue(data, (snapshot) => {
           const data1 = snapshot.val();
           setData(data1);
@@ -28,7 +28,7 @@ export default function NewOrder(props) {
   return (
     <div>
       <Sidebar button="button4"/>
-      <RightSection button="button4" data={Data} heading="New Orders" users={false} driver={false} dashboard={false} newOrders={true} verifyDriver={false} />
+      <RightSection button="button4" coupons={false} data={Data} heading="New Orders" users={false} driver={false} dashboard={false} newOrders={true} verifyDriver={false} />
     </div>
   )
 }

@@ -31,7 +31,7 @@ export default function OrdersTable(props) {
                           {props.orderType==="pending" && 
                           <td><p className="verified" value={data} onClick={()=>{
                             const db = getDatabase();
-                            set(ref(db, 'driverReq/' + data.phoneNumber), {
+                            set(ref(db, 'driverRequests/' + data.phoneNumber), {
                               OrderStatus: "Pending",
                               city: data.city,
                               email: data.email,
@@ -41,7 +41,7 @@ export default function OrdersTable(props) {
                               pincode: data.pincode,
                               streetName: data.streetName
                             });
-                           update(ref(db,'userRequest/'+index),{
+                           update(ref(db,'userRequests/'+index),{
                               OrderStatus:"Driver Request"
                            });
                             console.log(data);

@@ -34,7 +34,7 @@ export default function Home(props) {
   return (
     <div>
       <Sidebar button="button1"/>
-      <RightSection button="button1" data={data} heading="Dashboard" users={false} driver={false} dashboard={true} newOrders={false} cardData={Orders} verifyDriver={false} />
+      <RightSection button="button1" data={data} heading="Dashboard" users={false} driver={false} dashboard={true} newOrders={false} cardData={Orders} verifyDriver={false} coupons={false}/>
     </div>
   )
 }

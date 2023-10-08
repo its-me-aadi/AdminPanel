@@ -6,7 +6,7 @@ export default function OrdersTable(props) {
     const [courierD,setCourier]=useState([]);
     useEffect(()=>{
         const db = getDatabase();
-        const orderData = ref(db, 'courierRequest');
+        const orderData = ref(db, 'courierRequests');
         onValue( orderData , (snapshot) => {
           const data1 = snapshot.val();
           console.log(data1);
@@ -41,7 +41,7 @@ export default function OrdersTable(props) {
                                 {data.status.toLowerCase() === "pending" ?
                                     (<td><p className='notverified' style={{fontSize:"18px"}} value={data} onClick={() => {
                                         const db = getDatabase();
-                                        update(ref(db, 'courierRequest/' + index), {
+                                        update(ref(db, 'courierRequests/' + index), {
                                             status: "Done"
                                         });
                                         console.log(data);

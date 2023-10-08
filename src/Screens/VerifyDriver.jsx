@@ -19,7 +19,7 @@ export default function VerifyDriver(props) {
   return (
     <div>
       <Sidebar />
-      <RightSection RightSection heading="Verify Driver" users={false} driver={false} dashboard={false} newOrders={false} verifyDriver={true} />
+      <RightSection RightSection heading="Verify Driver" coupons={false} users={false} driver={false} dashboard={false} newOrders={false} verifyDriver={true} />
     </div>
   )
 }

@@ -1,7 +1,6 @@
 import React from 'react'
 import "../styles/sidebar.css"
 import { Link} from 'react-router-dom'
-import Logo from "../styles/images/logo.png"
 export default function Sidebar(props) {
   const clickedButtonStyle={
     opacaity:"0.1",
@@ -16,14 +15,14 @@ export default function Sidebar(props) {
     button3:{},
     button4:{},
     button5:{},
+    button6:{},
     [props.button]:clickedButtonStyle
   }
 
   return (
     <div className='sidebar'>
         <div className='sidebar-heading'>
-            MovEasy
-            <img src={Logo} className="sidebar-heading-logo" alt='logo'/>
+           Admin Panel
         </div>
         <hr className='sidebar-hr'/>
         <div>
@@ -33,6 +32,7 @@ export default function Sidebar(props) {
                 <Link to="/drivers" className='sidebar-listitems' style={clickedButton.button3}><li >Drivers</li></Link>
                 <Link to="/new-orders" className='sidebar-listitems' style={clickedButton.button4}><li>New Orders</li></Link>
                 <Link to="/courier-req" className='sidebar-listitems' style={clickedButton.button5}><li>Courier</li></Link>
+                <Link to="/coupons" className='sidebar-listitems' style={clickedButton.button6}><li>Coupons</li></Link>
             </ul>
         </div>
     </div>

@@ -19,7 +19,7 @@ export default function Courier(props) {
   return (
     <div>
       <Sidebar button="button5"/>
-      <RightSection button="button5" courier={true} heading="Courier" users={false} driver={false} dashboard={false} newOrders={false} verifyDriver={false} />
+      <RightSection button="button5" courier={true} heading="Courier" users={false} driver={false} dashboard={false} newOrders={false} verifyDriver={false} coupons={false}/>
     </div>
   )
 }

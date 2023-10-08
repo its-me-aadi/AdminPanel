@@ -9,12 +9,12 @@ export default function Orders() {
   const [delievered,setDelivered]=useState(0);
 useEffect(()=>{
   const db = getDatabase();
-  const newOrd = ref(db, 'courierRequest');
+  const newOrd = ref(db, 'courierRequests');
   onValue(newOrd, (snapshot) => {
     const data1 = snapshot.val();
     setNewOrders(data1.length);
   });
-  const pendOrders=ref(db,'driverReq');
+  const pendOrders=ref(db,'driverRequests');
   onValue(pendOrders, (snapshot) => {
     const pendData = snapshot.val();
     if(pendData.length){

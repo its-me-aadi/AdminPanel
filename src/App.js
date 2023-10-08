@@ -5,6 +5,7 @@ import NewOrders from './Screens/NewOrders';
 import Login from './Screens/Login';
 import VerifyDriver from "../src/Screens/VerifyDriver"
 import Courier from "../src/Screens/CourierReq"
+import Coupons from './Screens/Coupons'
 import { initializeApp } from "firebase/app";
 import {
   BrowserRouter as Router,
@@ -13,7 +14,6 @@ import {
 } from "react-router-dom";
 
 function App() {
-
   const firebaseConfig = {
     apiKey: "AIzaSyCt4pl45InmC646VdB9BmojzVvfju6M7qM",
     authDomain: "portfolio-a8d27.firebaseapp.com",
@@ -27,6 +27,7 @@ function App() {
   const app = initializeApp(firebaseConfig);
 
 
+
   return (
     <Router>
       <Routes>
@@ -37,6 +38,7 @@ function App() {
         <Route path="/login" element={<Login app={app} />} />
         <Route path="/verify-driver" element={<VerifyDriver app={app} />} />
         <Route path="/courier-req" element={<Courier app={app} />} />
+        <Route path="/coupons" element={<Coupons app={app} />} />
       </Routes>
     </Router>
   );

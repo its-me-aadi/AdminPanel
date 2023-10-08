@@ -22,16 +22,15 @@ export default function DriverDetailsCard() {
   })
   const [name, setName] = useState("Driver");
   async function photo(no) {
-    // const storage = getStorage();
-    // console.log(no);
-    // var s="driverImages/profilePhoto/"+no;
-    // const reference = sRef(storage, s);
-    // const url = await getDownloadURL(reference);
-    // var s2="driverImages/"+"aadhaarCard/"+no;
-    // const reference2 = sRef(storage, s2);
-    // const url2 = await getDownloadURL(reference2);
-    // setImageUrl(url);
-    // setAdhar(url2);
+    const storage = getStorage();
+    var s="driverImages/"+"profilePhoto/"+no +".jpg";
+    const reference = sRef(storage, s);
+    const url = await getDownloadURL(reference);
+    var s2="driverImages/"+"aadhaarCard/"+no +".jpg";
+    const reference2 = sRef(storage, s2);
+    const url2 = await getDownloadURL(reference2);
+    setImageUrl(url);
+    setAdhar(url2);
     console.log(imageUrl);
   }
   useEffect(() => {
